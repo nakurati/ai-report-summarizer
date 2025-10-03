@@ -7,11 +7,12 @@ Built with **Next.js**, **LangChain.js**, and the **OpenAI API**.
 
 ## Tech Stack
 
-- Next.js (UI + API routes)
-
-- OpenAI API
-
-- LangChain.js
+- **Next.js** (App Router: UI + API routes)
+- **OpenAI API** (`gpt-4.1-mini`, JSON responses)
+- **LangChain.js** (text splitting for long docs via `RecursiveCharacterTextSplitter`)
+- **pdf-parse** (PDF text extraction)
+- **mammoth** (DOCX text extraction)
+- **zod** (runtime schema validation)
 
 ## Goal
 
@@ -28,3 +29,9 @@ pnpm install
 ## Running Locally
 
 pnpm dev (http://localhost:3000)
+
+## Deployment
+
+Deployed on **Vercel**
+
+- Production: https://ai-report-summarizer.vercel.app
